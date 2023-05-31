@@ -50,12 +50,40 @@
 # step4 = "Repeat\n"
 # print(step1 + step2 + step3 + step4)
 
-alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-# second number is NOT inclusive
-print(alphabet[11:16])
-print(alphabet[:5])
-print(alphabet[20:])
+# alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# # second number is NOT inclusive
+# print(alphabet[11:16])
+# print(alphabet[:5])
+# print(alphabet[20:])
 
-fullName = "Stanislav Petrov"
-differentName = fullName.replace("Stan", "Bob")
-print(differentName)
+# fullName = "Stanislav Petrov"
+# differentName = fullName.replace("Stan", "Bob")
+# print(differentName)
+
+# Exercise: String Replacement
+# Actual lyrics: 
+# Just a small town girl
+# Livin' in a lonely world
+# She took the midnight train going anywhere
+# Just a city boy
+# Born and raised in South Detroit
+# He took the midnight train going anywhere
+
+journey = """Just a small tone girl
+Leaving in a lonely whirl
+She took the midnight tray going anywhere
+Just a seedy boy
+Bored and raised in South Detroit or something
+He took the midnight tray going anywhere"""
+
+journey = (journey
+  .replace('tone', "town")
+  .replace('Leaving', "Living")
+  .replace('whirl', 'world')
+  .replace('tray', 'train')
+  .replace('seedy', 'city')
+  .replace('Bored', 'Born')
+  .replace('or something', '')
+)
+
+print(journey)
