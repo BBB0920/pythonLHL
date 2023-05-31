@@ -29,3 +29,33 @@
 # And make it better"""
 
 # print(veryValidString)
+
+
+# String operations
+# More available on https://docs.python.org/3/library/string.html
+
+# firstName = "Stanislav"
+# lastName = "Petrov"
+# fullName = firstName + " " + lastName
+# print(fullName)
+
+# savory = "peanut butter"
+# sweet = "jelly"
+# sandwich = savory + " and " + sweet
+# print(sandwich)
+
+# step1 = "Eat\n"
+# step2 = "Sleep\n"
+# step3 = "Code\n"
+# step4 = "Repeat\n"
+# print(step1 + step2 + step3 + step4)
+
+alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# second number is NOT inclusive
+print(alphabet[11:16])
+print(alphabet[:5])
+print(alphabet[20:])
+
+fullName = "Stanislav Petrov"
+differentName = fullName.replace("Stan", "Bob")
+print(differentName)
