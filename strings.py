@@ -9,13 +9,23 @@
 # https://python-reference.readthedocs.io/en/latest/docs/str/escapes.html
 
 # \n is new line
-print('Testing escape characters: \\n Tested "\n"')
+# print('Testing escape characters: \\n Tested "\n"')
 
 # \a produces a beep sound
-print('Testing escape characters: \\a Tested "\a"')
+# print('Testing escape characters: \\a Tested "\a"')
 
 # \t is tab
-print('Testing escape characters: \\t Tested "\t"')
+# print('Testing escape characters: \\t Tested "\t"')
 
 # \v is a vertical tab - not used that often, don't worry about it
-print('Testing escape characters: \\v Tested "\v"')
+# print('Testing escape characters: \\v Tested "\v"')
+
+
+# Multi-Line Strings
+
+# veryValidString = """Hey Jude
+# Don't make it bad
+# Take a sad song
+# And make it better"""
+
+# print(veryValidString)
