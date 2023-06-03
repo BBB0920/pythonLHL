@@ -16,9 +16,17 @@
 
 # Exercise: Tax Calculator
 
-subtotal = input("What's your subtotal? ")
-taxRate = 0.25
-tax = subtotal * taxRate
-total = subtotal + tax
-print("Your tax is " + str(tax))
-print("Your total is: " + str(total))
+# subtotal = input("What's your subtotal? ")
+# taxRate = 0.25
+# tax = subtotal * taxRate
+# total = subtotal + tax
+# print("Your tax is " + str(tax))
+# print("Your total is: " + str(total))
+
+# Exercise: Bill Splitter
+
+bill = input("Bill total: ")
+tip = input("Tip percentage: ")
+people = input("Number of people: ")
+total = round(((bill + float(bill * tip / 100)) / people), 2) 
+print("Each person should pay: $" + str(total))
