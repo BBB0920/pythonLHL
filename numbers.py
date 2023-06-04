@@ -25,8 +25,8 @@
 
 # Exercise: Bill Splitter
 
-bill = input("Bill total: ")
-tip = input("Tip percentage: ")
-people = input("Number of people: ")
-total = round(((bill + float(bill * tip / 100)) / people), 2) 
-print("Each person should pay: $" + str(total))
+# bill = input("Bill total: ")
+# tip = input("Tip percentage: ")
+# people = input("Number of people: ")
+# total = round(((bill + float(bill * tip / 100)) / people), 2) 
+# print("Each person should pay: $" + str(total))
