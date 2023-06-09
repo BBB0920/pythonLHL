@@ -53,17 +53,17 @@
 
 # Exercise: Actors
 
-actors = [
-  "Nathan Fillion",
-  "Gina Torres",
-  "Alan Tudyk",
-  "Morena Baccarin",
-  "Adam Baldwin",
-  "Jewel Staite",
-  "Sean Maher",
-  "Summer Glau",
-  "Ron Glass"
-]
+# actors = [
+#   "Nathan Fillion",
+#   "Gina Torres",
+#   "Alan Tudyk",
+#   "Morena Baccarin",
+#   "Adam Baldwin",
+#   "Jewel Staite",
+#   "Sean Maher",
+#   "Summer Glau",
+#   "Ron Glass"
+# ]
 
 # roles = [
 #   "Captain Malcolm Reynolds",
@@ -99,7 +99,7 @@ actors = [
 #   ["Ron Glass", "Derrial Book"]
 # ]
 
-print('Featuring:\n=-=-=-=-=-=-=-=')
+# print('Featuring:\n=-=-=-=-=-=-=-=')
 # for actorRole in actorRoles:
 #   actor = actorRole[0]
 #   role = actorRole[1]
@@ -109,7 +109,24 @@ print('Featuring:\n=-=-=-=-=-=-=-=')
 # for actor, role in actorRoles:
 #   print(actor + " as " + role)
 
-enumerableActors = enumerate(actors)
-print(enumerableActors)
-enumerableActorsList = list(enumerableActors)
-print(enumerableActorsList)
+# enumerableActors = enumerate(actors)
+# print(enumerableActors)
+# enumerableActorsList = list(enumerableActors)
+# print(enumerableActorsList)
+
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+
+lphbt = alphabet
+vowels = 'aeiou'
+
+for vowel in vowels:
+  lphbt = lphbt.replace(vowel, '')
+
+print(lphbt)
+
+favouriteAlphabet = alphabet
+favouriteLetters = 'gsbrox'
+for letter in favouriteLetters:
+  favouriteAlphabet = favouriteAlphabet.replace(letter, letter.upper())
+
+print(favouriteAlphabet)
