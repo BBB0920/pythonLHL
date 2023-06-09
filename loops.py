@@ -41,13 +41,43 @@
 
 # Iterating Over a Range
 
-import time
+# import time
 
-bacteria = "🌭"
-generations = 10
+# bacteria = "🌭"
+# generations = 10
 
-for generation in range(0, generations):
-  bacteria = bacteria * 2
-  print(bacteria)
-  time.sleep(0.5)
+# for generation in range(0, generations):
+#   bacteria = bacteria * 2
+#   print(bacteria)
+#   time.sleep(0.5)
 
+# Exercise: Actors
+
+actors = [
+  "Nathan Fillion",
+  "Gina Torres",
+  "Alan Tudyk",
+  "Morena Baccarin",
+  "Adam Baldwin",
+  "Jewel Staite",
+  "Sean Maher",
+  "Summer Glau",
+  "Ron Glass"
+]
+
+roles = [
+  "Captain Malcolm Reynolds",
+  "Zoe Washburn",
+  "Hoban Washburn",
+  "Inara Serra",
+  "Jayne Cobb",
+  "Kaylee Frye",
+  "Dr. Simon Tam",
+  "River Tam",
+  "Derrial Book"
+]
+
+index = 8
+
+for indice in range(0, index):
+  print(actors[indice] + " as " + roles[indice])
