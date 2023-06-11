@@ -114,6 +114,8 @@
 # enumerableActorsList = list(enumerableActors)
 # print(enumerableActorsList)
 
+# Strings are Special Lists
+
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 
 lphbt = alphabet
