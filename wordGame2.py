@@ -12,28 +12,52 @@ NAME
 
 newProseString = proseString
 
-userInput = input("Please provide an exapmle of an occupation. ")
-newProseString = newProseString.replace("OCCUPATION", userInput)
+# userInput = input("Please provide an exapmle of an occupation. ")
+# newProseString = newProseString.replace("OCCUPATION", userInput)
 
-userInput = input("Please provide a country. ")
-newProseString = newProseString.replace("COUNTRY", userInput)
+# userInput = input("Please provide a country. ")
+# newProseString = newProseString.replace("COUNTRY", userInput)
 
-userInput = input("Please provide a plural noun. ")
-newProseString = newProseString.replace("PLURAL_NOUN", userInput)
+# userInput = input("Please provide a plural noun. ")
+# newProseString = newProseString.replace("PLURAL_NOUN", userInput)
 
-userInput = input("Please provide a verb. ")
-newProseString = newProseString.replace("VERB", userInput)
+# userInput = input("Please provide a verb. ")
+# newProseString = newProseString.replace("VERB", userInput)
 
-userInput = input("Please provide an adjective. ")
-newProseString = newProseString.replace("ADJECTIVE", userInput)
+# userInput = input("Please provide an adjective. ")
+# newProseString = newProseString.replace("ADJECTIVE", userInput)
 
-userInput = input("Please provide an example of a personal item. ")
-newProseString = newProseString.replace("PERSONAL_ITEM", userInput)
+# userInput = input("Please provide an example of a personal item. ")
+# newProseString = newProseString.replace("PERSONAL_ITEM", userInput)
 
-userInput = input("Please provide a holiday. ")
-newProseString = newProseString.replace("HOLIDAY", userInput)
+# userInput = input("Please provide a holiday. ")
+# newProseString = newProseString.replace("HOLIDAY", userInput)
 
-userInput = input("What is your name? ")
-newProseString = newProseString.replace("NAME", userInput)
+# userInput = input("What is your name? ")
+# newProseString = newProseString.replace("NAME", userInput)
+
+# print(newProseString)
+
+# Refactoring
+
+replacements = [
+  ["an occupation: ", "OCCUPATION"],
+  ["a country: ", "COUNTRY"],
+  ["a plural noun: ", "PLURAL_NOUN"],
+  ["a verb, like 'run,' 'eat,' or 'think': ", "VERB"],
+  ["an adjective, like 'friendly', 'long,' or 'warm': ", "ADJECTIVE"],
+  ["a title that someone might have in an organization, like 'manager,' 'captain,' or 'trainer': ", "TITLE"],
+  ["a personal item: ", "PERSONAL_ITEM"],
+  ["a holiday, like Christmas or Labour Day: ", "HOLIDAY"],
+  ["your name: ", "NAME"]
+]
+
+for replacement in replacements:
+  prompt = "Please provide " + replacement[0]
+  placeholder = replacement[1]
+  userInput = input(prompt)
+  newProseString = newProseString.replace(placeholder, userInput)
 
 print(newProseString)
+
+
