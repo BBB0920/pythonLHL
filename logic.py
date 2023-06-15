@@ -105,11 +105,24 @@
 
 # Exercise: Password Checker
 
-password = "Hello"
+# password = "Hello"
 
-print("Please enter your password")
+# print("Please enter your password")
+# pw = input()
+# if pw == password:
+#   print("That is the correct password!")
+# else:
+#   print("Sorry, that is incorrect.")
+
+# Exercise: Password Validator
+
+print("Please enter your password.")
 pw = input()
-if pw == password:
-  print("That is the correct password!")
-else:
-  print("Sorry, that is incorrect.")
+print("Please input it again.")
+pw2 = input()
+if pw == pw2 and len(pw) >= 8:
+  print("You have successfully set the password.")
+elif pw != pw2:
+  print("Your passwords do not match.")
+elif len(pw) < 8:
+  print("Your password is too short.")
