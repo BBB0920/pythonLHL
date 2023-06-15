@@ -116,13 +116,36 @@
 
 # Exercise: Password Validator
 
-print("Please enter your password.")
-pw = input()
-print("Please input it again.")
-pw2 = input()
-if pw == pw2 and len(pw) >= 8:
-  print("You have successfully set the password.")
-elif pw != pw2:
-  print("Your passwords do not match.")
-elif len(pw) < 8:
-  print("Your password is too short.")
+# print("Please enter your password.")
+# pw = input()
+# print("Please input it again.")
+# pw2 = input()
+# if pw == pw2 and len(pw) >= 8:
+#   print("You have successfully set the password.")
+# elif pw != pw2:
+#   print("Your passwords do not match.")
+# elif len(pw) < 8:
+#   print("Your password is too short.")
+
+# Exercise: Math Game
+
+questions = [
+  [1,2],
+  [2,3],
+  [3,4],
+  [4,5],
+  [5,6]
+]
+
+score = 0
+
+for a, b in questions:
+  response = int(input(str(a) + " + " + str(b) + " = "))
+  if response == a + b:
+    score += 1
+
+print("Your final score is " + str(score) + "/" + str(len(questions)))
+if score > (len(questions) / 2):
+  print("What an impressive score!")
+else:
+  print("Keep practicing!")
