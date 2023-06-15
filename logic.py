@@ -45,20 +45,71 @@
 
 # Compound Boolean Expressions
 
-outsideTemperature = 28
-sunny = True
-print(outsideTemperature > 25 and sunny)
-# => True
-sunny = False
-print(outsideTemperature > 25 and sunny)
-# => False
+# outsideTemperature = 28
+# sunny = True
+# print(outsideTemperature > 25 and sunny)
+# # => True
+# sunny = False
+# print(outsideTemperature > 25 and sunny)
+# # => False
 
-hasCoffee = True
-hasBeer = True
-print(hasCoffee or hasBeer)
-# => True
-hasCoffee = False
-print(hasCoffee or hasBeer)
-# => True
-print(hasCoffee and hasBeer)
-# => False
+# hasCoffee = True
+# hasBeer = True
+# print(hasCoffee or hasBeer)
+# # => True
+# hasCoffee = False
+# print(hasCoffee or hasBeer)
+# # => True
+# print(hasCoffee and hasBeer)
+# # => False
+
+# if elif else
+
+# cartons = [
+#   ["Not almond milk", "Wrong logo"],
+#   ["Not almond milk", "Wrong logo"],
+#   ["Almond Milk", "Wrong logo"],
+#   ["Almond Milk", "Right logo"],
+#   ["Almond Milk", "Wrong logo"],
+# ]
+
+# cart = []
+
+# wrongCartonsLookedAt = 0
+
+# for carton in cartons:
+#   typeOfMilk = carton[0]
+#   logo = carton[1]
+#   if typeOfMilk is "Almond Milk" and logo is "Right logo":
+#     cart.append(carton)
+#     break
+#   else:
+#     wrongCartonsLookedAt += 1
+
+# if len(cart) is 0:
+#   cart.append("Beer")
+
+# print("I looked at " + str(wrongCartonsLookedAt) + " cartons that were not almond-painted-like-a-cow brand almond milk.")
+
+# Else if
+
+# age = 19
+
+# print("Can you ride this rollercoaster?")
+# if age > 18: 
+#   print("Definitely!")
+# elif age > 12: 
+#   print("Maybe. How tall are you?")
+# else:
+#   print("Sorry kid, come back when you're older")
+
+# Exercise: Password Checker
+
+password = "Hello"
+
+print("Please enter your password")
+pw = input()
+if pw == password:
+  print("That is the correct password!")
+else:
+  print("Sorry, that is incorrect.")
