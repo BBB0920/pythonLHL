@@ -83,4 +83,15 @@ selection = input()
 if int(selection) < 0 or int(selection) >= len(stories):
   print("Please make a valid selection.")
 else: 
-  print("You have chosen " + selection + ". " + str(stories[int(selection)][0]))
+  story = stories[int(selection)]
+  print("You have chosen " + selection + ". " + str(story[0]))
+  print("")
+  print(str(story[0]))
+  for replacement in story[2]:
+    prompt = "Please provide " + replacement[0]
+    placeholder = replacement[1]
+    userInput = input(prompt)
+    story[1] = story[1].replace(placeholder, userInput)
+
+  print(str(story[1]))
+
